@@ -7,7 +7,7 @@ Each cell can contain only one creature at a time. The grid is bounded so that n
 
 Time is expressed in steps. Each creature can perform certain actions at each time step.
 
-Ants behave according to the following model:
+🐜 Ants behave according to the following model:
 
 •Move: At each time step, ants attempt to move randomly up, down, left, or right. If the neighboring cell in the chosen 
 direction is occupied by a doodlebug or leads the ant outside the grid, the ant remains in its current cell.
@@ -17,7 +17,7 @@ will reproduce. In the simulation, this is expressed by creating a new ant in an
 that is empty. If no empty cell is available, reproduction does not occur. Once an offspring is created, the ant cannot 
 reproduce again until it survives for three consecutive time steps again.
 
-Beetles behave according to the following model:
+🪲Beetles behave according to the following model:
 
 •Move: At each time step, a beetle moves to an adjacent cell that contains an ant and consumes the ant. If there are no ants 
 in neighboring cells, the beetle moves according to the same rules as ants. Note that a beetle cannot eat other beetles.
@@ -38,3 +38,5 @@ to track which organisms have moved.
 Start the world with 5 beetles and 100 ants. After each time step, prompt the user to press the Enter key to proceed to 
 the next time step. Ideally, you should observe a cyclic evolution between the populations of predators and prey, although 
 random disturbances may lead to the disappearance of one or both species.
+
+This is an exercise from Savitch's Absolute C++, chapter 15 (Exercise 3).
